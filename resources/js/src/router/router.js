@@ -3,6 +3,7 @@ import routes from "./routes.js";
 
 const router = createRouter({
     history: createWebHistory(),
+    linkActiveClass: 'uk-active',
     routes
 });
 
