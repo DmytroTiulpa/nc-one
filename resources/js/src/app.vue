@@ -1,17 +1,3 @@
-<!--
-<script setup>
-
-</script>
-
-<template>
-
-</template>
-
-<style scoped>
-
-</style>
--->
-
 <template>
 
     <div class="uk-grid-collapse uk-grid-match uk-text-center" data-uk-grid>
@@ -27,9 +13,19 @@
 
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-width-1-1">
                     <ul class="uk-nav-primary" data-uk-nav>
-                        <li class="uk-active"><a href="#">MENU ITEM 1</a></li>
-                        <li class=""><a href="#">MENU ITEM 2</a></li>
-                        <li class=""><a href="#">MENU ITEM 3</a></li>
+                        <li class="uk-active">
+                            <router-link to="/">Home</router-link>
+                            <!--<a href="#">Home</a>-->
+                        </li>
+                        <li class="">
+                            <router-link to="/page1">Page 1</router-link>
+                        </li>
+                        <li class="">
+                            <router-link to="/page2">Page 2</router-link>
+                        </li>
+                        <li class="">
+                            <router-link to="/page3">Page 3</router-link>
+                        </li>
 <!--                        <li class="uk-parent">
                             <a href="#">Parent <span uk-nav-parent-icon></span></a>
                             <ul class="uk-nav-sub">
@@ -55,9 +51,12 @@
             </div>
         </div>
         <div class="uk-width-3-4">
-            <div class="uk-tile uk-tile-muted">
+            <div class="uk-tile uk-tile-muted uk-text-left">
+
                 <h1>Привет {{ username }}!</h1>
-                <p class="uk-h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid animi beatae consectetur cumque delectus, dicta eligendi enim est impedit ipsa iusto maiores molestias nisi pariatur perferendis quas quidem quo suscipit unde? Beatae cumque deserunt est eum excepturi fuga incidunt inventore maxime pariatur rerum, tenetur veniam, voluptate. Accusantium asperiores consectetur consequuntur cumque dolorem eaque ipsam minus, modi natus nemo nobis nulla obcaecati perferendis, quo vitae! Blanditiis doloribus iusto similique. Atque consectetur eum ex facilis hic, id maxime minus nobis nostrum quae quidem sint tempora ullam. A accusantium autem dicta, eligendi exercitationem illo maxime nam, nulla quae, quam quisquam recusandae voluptates!</p>
+
+                <router-view></router-view>
+
             </div>
         </div>
     </div>

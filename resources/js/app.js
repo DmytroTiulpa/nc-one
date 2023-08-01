@@ -2,6 +2,9 @@
 
 import { createApp } from "vue";
 import App from './src/app.vue';
+import Router from "./src/router/router.js";
 
-createApp(App).mount('#app')
+createApp(App)
+    .use(Router)
+    .mount('#app')
 
