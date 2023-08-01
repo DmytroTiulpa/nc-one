@@ -11,7 +11,8 @@
                     </svg>
                 </div>
 
-                <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-width-1-1">
+                <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-width-1-1"
+                     data-uk-sticky="offset: 20">
                     <ul class="uk-nav-primary" data-uk-nav>
                         <li class="uk-active">
                             <router-link to="/">Home</router-link>
@@ -53,7 +54,7 @@
         <div class="uk-width-3-4">
             <div class="uk-tile uk-tile-muted uk-text-left">
 
-                <h1>Привет {{ username }}!</h1>
+                <!--<h1>Привет {{ username }}!</h1>-->
 
                 <router-view></router-view>
 
